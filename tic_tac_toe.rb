@@ -62,7 +62,12 @@ class Game
         puts "#{@player1.name} won!"
         display()
         break
+      elsif $board.has_value?("") != true
+        puts "DRAW!"
+        display()
+        break
       end
+
 
       puts "#{@player2.name} enter square co-ordinates"
       input = gets.chomp
@@ -84,6 +89,10 @@ class Game
       if game_won? != false
         puts "#{@player2.name} won!"
         display()
+      elsif $board.has_value?("") != true
+        puts "DRAW!"
+        display()
+        break
       end
     end
 
