@@ -14,4 +14,4 @@ def bubble_sort (array)
 end
 
 
-bubble_sort([10,2,6,2,1,5,8,6,0,2,8,9 ])
+bubble_sort([10,2,6,2,1,5,8,6,0,2,8,9, 453 ,345 ,345,345 ])
